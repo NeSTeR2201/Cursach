@@ -1,0 +1,237 @@
+.warehouse {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease-in-out forwards; /* Анимация появления */
+}
+
+.warehouse-info {
+  margin-top: 20px;
+}
+
+.warehouse-info h2 {
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.warehouse-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.warehouse-info li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  color: #666;
+}
+
+.warehouse-info li:last-child {
+  border-bottom: none;
+}
+
+/* Стили для главной страницы */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+.features-section h2{
+  color: #eee;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.features-section,
+.services-section {
+  margin-bottom: 60px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.feature-card h3 {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service-item {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Стили для страницы О нас */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.company-info,
+.mission-section,
+.team-section,
+.achievements-section {
+  margin-bottom: 60px;
+}
+
+.team-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.team-info li {
+  padding: 10px 0;
+  color: #666;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.achievement-card {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.achievement-card h3 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Общие стили для анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards; /* Анимация появления */
+}
+
+/* Стили для карточек в секции преимуществ */
+.feature-card {
+  background-color: #fff; /* Белый фон карточек */
+  border-radius: 10px; /* Закругленные углы */
+  padding: 1.5rem; /* Внутренние отступы */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+  transition: transform 0.3s, box-shadow 0.3s; /* Плавный переход */
+}
+
+/* Эффект при наведении на карточку */
+.feature-card:hover {
+  transform: translateY(-5px); /* Поднимаем карточку вверх */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
+}
+
+/* Стили для кнопок */
+.register-button {
+  width: 100%; /* Полная ширина */
+  padding: 0.7rem; /* Внутренние отступы */
+  background-color: rgba(97, 98, 251, 1); /* Цвет фона кнопки */
+  color: white; /* Цвет текста кнопки */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Закругленные углы */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s, transform 0.3s; /* Плавный переход */
+}
+
+/* Эффект при наведении на кнопку */
+.register-button:hover {
+  background-color: #0056b3; /* Темнее при наведении */
+  transform: scale(1.05); /* Увеличиваем кнопку */
+}
+
+/* Стили для секции с достижениями */
+.achievement-card {
+  background-color: #fff; /* Белый фон карточек */
+  border-radius: 10px; /* Закругленные углы */
+  padding: 1.5rem; /* Внутренние отступы */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+  transition: transform 0.3s, box-shadow 0.3s; /* Плавный переход */
+}
+
+/* Эффект при наведении на карточку достижения */
+.achievement-card:hover {
+  transform: translateY(-5px); /* Поднимаем карточку вверх */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
+}
+
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .features-grid,
+  .services-list,
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}

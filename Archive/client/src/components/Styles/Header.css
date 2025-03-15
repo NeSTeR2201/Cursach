@@ -1,0 +1,93 @@
+.header {
+  background-color: rgba(97, 98, 251, 1) !important;
+  margin-top: -10px;
+  padding: 0.6rem 0;
+  display: flex;
+  align-items: center; /* Центрирование элементов по вертикали */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 10px 15px; /* Добавление отступов для выравнивания по высоте */
+  display: flex; /* Используем flex для центрирования текста */
+  align-items: center; /* Центрирование текста по вертикали */
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #d46fff;
+}
+
+.login-link {
+  margin-left: auto;
+  background-color: rgba(97, 98, 251, 1);
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: flex; /* Используем flex для центрирования текста */
+  align-items: center; /* Центрирование текста по вертикали */
+}
+
+.login-link:hover {
+  background-color: #0056b3;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 10px 15px; /* Добавление отступов для выравнивания по высоте */
+  display: flex; /* Используем flex для центрирования текста */
+  align-items: center; /* Центрирование текста по вертикали */
+}
+
+.dropbtn:hover {
+  color: #d46fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content .nav-link {
+  display: block;
+  padding: 12px 16px;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content .nav-link:hover {
+  background-color: #f1f1f1;
+}
